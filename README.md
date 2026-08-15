@@ -130,26 +130,7 @@ The raw dataset contained **1,048,575 rows** and **26 columns** with empty entri
 | **Data Processing** | Python (pandas, numpy, matplotlib, seaborn, plotly) |
 | **Database & Analytics** | T-SQL, MS SQL Server (CTEs, Window Functions: DENSE_RANK, LAG, Conditional Aggregations) |
 | **Business Intelligence** | Power BI Desktop |
-
----
-
-##  Project Structure
-
-```
-Pakistan-E-Commerce-Sales-Revenue-Leakage-Analysis/
-├── README.md                          # Project documentation
-├── cleaned_ecommerce_data.csv         # Clean dataset (582,008 records)
-├── notebooks/
-│   └── data_cleaning_eda.ipynb        # Python data cleaning & EDA
-├── sql/
-│   └── analytics_queries.sql          # T-SQL analytical queries
-├── dashboards/
-│   ├── Executive_Sales_Dashboard.pbix # Power BI dashboard
-│   └── Customer_Trend_Dashboard.pbix  # Customer analytics dashboard
-└── data/
-    └── raw_ecommerce_data.csv         # Raw dataset (1,048,575 records)
-```
-
+ 
 ---
 
 ##  Key Recommendations
