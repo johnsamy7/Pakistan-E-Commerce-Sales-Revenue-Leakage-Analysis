@@ -64,8 +64,8 @@ The raw dataset contained **1,048,575 rows** and **26 columns** with empty entri
 | Category | Total Sales | Units Ordered | Avg. Discount |
 |----------|-------------|----------------|---------------|
 | **Mobiles & Tablets** | $2.33B+ | 126K+ | $2,358 |
-| **Appliances** | $656.8M | — | — |
-| **Entertainment** | $538.9M | — | $2,730 |
+| **Appliances** | $656.8M | 58k+ | $1,029 |
+| **Entertainment** | $538.9M | 27k+ | $2,730 |
 
 **Promotional Impact**: Entertainment and Mobiles & Tablets showed the highest average discount dependency (~$2,730 and ~$2,358 per order respectively) to convert high-ticket sales.
 
@@ -81,8 +81,8 @@ The raw dataset contained **1,048,575 rows** and **26 columns** with empty entri
 | **Payaxis** | $1.14B | 23.4% | Low |
 | **Cash on Delivery (COD)** | $1.06B | 21.8% | Low |
 | **Easypay** | $916.1M | 18.8% | High |
-| **Bank Alfalah** | — | — | **95.6%** |
-| **Easypay MA** | — | — | **91.6%** |
+| **Bank Alfalah** | $688.2M | 14.11% | **95.6%** |
+| **Easypay MA** | $108.8M | 2.23% | **91.6%** |
 
 **High Cancellation Channels**: Digital payment gateways such as Bank Alfalah (95.6% cancel rate) and Easypay MA (91.6% cancel rate) suffered from severe cancellation rates, highlighting operational friction in digital checkout verification.
 
@@ -96,7 +96,7 @@ The raw dataset contained **1,048,575 rows** and **26 columns** with empty entri
 | Year | Orders | Sales | Peak Month |
 |------|--------|-------|-----------|
 | **2017** (Peak) | 289,643 | $2.14B | November |
-| **2016-2018** | — | — | — |
+| **2016-2018** | 582,008 | $4.87B | November |
 
 #### Seasonality Patterns:
 - **Q4 Super Surges**: November consistently drove peak sales across all years
@@ -159,12 +159,6 @@ Pakistan-E-Commerce-Sales-Revenue-Leakage-Analysis/
 3. **Improve Digital Payments**: Address technical/UX barriers in Bank Alfalah and Easypay MA checkout flows
 4. **Capitalize on Seasonality**: Plan inventory, marketing, and staffing for Q4 mega-sale events
 5. **VIP Retention**: Implement loyalty programs and personalized engagement for top 10% customers
-
----
-
-## 📧 Contact
-
-For questions or collaboration opportunities, feel free to reach out!
 
 ---
 
