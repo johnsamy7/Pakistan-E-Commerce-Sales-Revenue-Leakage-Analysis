@@ -34,7 +34,7 @@ SELECT *
 FROM cleaned_ecommerce_data
 WHERE grand_total > (SELECT AVG(grand_total) FROM cleaned_ecommerce_data);
 
---5. Total discount, average discount, and discounted order count per category
+-- Total discount, average discount, and discounted order count per category
 
 SELECT 
     category_name_1,
@@ -45,7 +45,7 @@ FROM cleaned_ecommerce_data
 WHERE discount_amount > 0
 GROUP BY category_name_1;
 
---6. Number of distinct SKUs and total orders per category
+-- Number of distinct SKUs and total orders per category
 
 SELECT 
     category_name_1,
@@ -55,7 +55,7 @@ FROM cleaned_ecommerce_data
 GROUP BY category_name_1;
 
 
---7. Customers with >5 orders, total spending, and average order value
+-- Customers with >5 orders, total spending, and average order value
 
 SELECT 
     Customer_ID,
@@ -67,7 +67,7 @@ GROUP BY Customer_ID
 HAVING COUNT(*) > 5
 ORDER BY total_spending DESC;
 
---8. SKUs whose average price exceeds overall average price
+-- SKUs whose average price exceeds overall average price
 
 SELECT 
     sku,
@@ -77,7 +77,7 @@ GROUP BY sku
 HAVING AVG(price) > (SELECT AVG(price) FROM cleaned_ecommerce_data);
 
 
---9. Order count and total sales by spending classification
+-- Order count and total sales by spending classification
 
 SELECT 
     CASE 
@@ -95,7 +95,7 @@ GROUP BY
         ELSE 'High'
     END;
 
---10. Categories with total sales greater than average total sales across categories
+-- Categories with total sales greater than average total sales across categories
 
 WITH CategorySales AS (
     SELECT 
@@ -118,7 +118,7 @@ SELECT
     RANK() OVER (PARTITION BY category_name_1 ORDER BY grand_total DESC) AS order_rank_in_category
 FROM cleaned_ecommerce_data;
 
---12. Rank payment methods by total sales amount
+-- Rank payment methods by total sales amount
 
 SELECT 
     payment_method,
@@ -127,7 +127,7 @@ SELECT
 FROM cleaned_ecommerce_data
 GROUP BY payment_method;
 
---13. Running total of grand_total per customer
+-- Running total of grand_total per customer
 
 SELECT 
     Customer_ID,
@@ -136,7 +136,7 @@ SELECT
     SUM(grand_total) OVER (PARTITION BY Customer_ID ORDER BY item_id) AS running_total_sales
 FROM cleaned_ecommerce_data;
 
---14. Identify highest-value order for each customer
+-- Identify highest-value order for each customer
 
 WITH RankedCustomerOrders AS (
     SELECT 
@@ -153,7 +153,7 @@ SELECT
 FROM RankedCustomerOrders
 WHERE rn = 1;
 
---15. Order grand_total vs. category average and absolute difference
+-- Order grand_total vs. category average and absolute difference
 
 SELECT 
     item_id,
@@ -164,7 +164,7 @@ SELECT
 FROM cleaned_ecommerce_data;
 
 
---16. Total sales and total orders per year (newest to oldest)
+-- Total sales and total orders per year (newest to oldest)
 
 SELECT 
     Year,
@@ -175,7 +175,7 @@ GROUP BY Year
 ORDER BY Year DESC;
 
 
---17. Monthly total sales and order count grouped by Year and Month
+-- Monthly total sales and order count grouped by Year and Month
 
 SELECT 
     Year,
@@ -186,7 +186,7 @@ FROM cleaned_ecommerce_data
 GROUP BY Year, Month
 ORDER BY Year ASC, Month ASC;
 
---18. First and latest order dates for each customer
+--First and latest order dates for each customer
 SELECT 
     Customer_ID,
     MIN(created_at) AS first_order_date,
@@ -194,7 +194,7 @@ SELECT
 FROM cleaned_ecommerce_data
 GROUP BY Customer_ID;
 
---19. Monthly sales, previous month sales, and month-over-month growth percentage
+-- Monthly sales, previous month sales, and month-over-month growth percentage
 
 WITH MonthlySales AS (
     SELECT 
@@ -224,7 +224,7 @@ SELECT
 FROM SalesWithLag
 ORDER BY Year ASC, Month ASC;
 
---20. Dense rank of months within each year by total sales
+-- Dense rank of months within each year by total sales
 
 WITH MonthlySales AS (
     SELECT 
