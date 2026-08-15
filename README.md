@@ -1,10 +1,10 @@
-# 🛒 Pakistan E-Commerce: End-to-End Analytics & BI Dashboard
+#  Pakistan E-Commerce: End-to-End Analytics & BI Dashboard
 
 An end-to-end data analytics project combining data cleaning, exploratory data analysis (EDA), advanced SQL querying, and interactive Power BI dashboards to analyze transaction trends, revenue leakage, customer behavior, and payment risk.
 
 ---
 
-## 📌 Project Summary
+##  Project Summary
 
 Using the Pakistan's Largest E-commerce Dataset (over 1M raw records from July 2016 to August 2018), this project tracks the full lifecycle of e-commerce operations:
 
@@ -14,7 +14,7 @@ Using the Pakistan's Largest E-commerce Dataset (over 1M raw records from July 2
 
 ---
 
-## 🧹 Data Cleaning & Pipeline
+##  Data Cleaning & Pipeline
 
 The raw dataset contained **1,048,575 rows** and **26 columns** with empty entries, corrupted status labels, and formatting artifacts. The cleaning pipeline executed the following steps:
 
@@ -42,7 +42,7 @@ The raw dataset contained **1,048,575 rows** and **26 columns** with empty entri
 
 ---
 
-## 💡 Key Business Insights
+##  Key Business Insights
 
 ### 1. Revenue & Fulfillment Health
 
@@ -108,7 +108,7 @@ The raw dataset contained **1,048,575 rows** and **26 columns** with empty entri
 
 ---
 
-## 📊 Power BI Dashboards
+##  Power BI Dashboards
 
 ### 1. **Executive Sales & Channel Dashboard**
 - Total sales ($4.88B) and order volume (582K)
@@ -123,7 +123,7 @@ The raw dataset contained **1,048,575 rows** and **26 columns** with empty entri
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Component | Technologies |
 |-----------|---------------|
@@ -133,7 +133,7 @@ The raw dataset contained **1,048,575 rows** and **26 columns** with empty entri
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Pakistan-E-Commerce-Sales-Revenue-Leakage-Analysis/
@@ -152,7 +152,7 @@ Pakistan-E-Commerce-Sales-Revenue-Leakage-Analysis/
 
 ---
 
-## 🎯 Key Recommendations
+##  Key Recommendations
 
 1. **Reduce Revenue Leakage**: Investigate cancellation drivers in digital payment gateways and optimize order fulfillment
 2. **Optimize Discounting**: Develop targeted promotional strategies for high-discount-dependent categories
