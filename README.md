@@ -110,6 +110,14 @@ The raw dataset contained **1,048,575 rows** and **26 columns** with empty entri
 
 ##  Power BI Dashboards
 
+ **[Download the .pbix file](./E-commerce%20power-BI.pbix?raw=true)** to explore the full interactive model and DAX measures.
+
+### Page 1: Sales Performance & Channel Analysis
+<img width="1311" height="734" alt="Screenshot 2026-08-16 001406" src="https://github.com/user-attachments/assets/7cd205e6-9338-491c-82bf-f82ad89161fe" />
+
+### Page 2: Customer Trends & VIP Profiling
+<img width="1309" height="732" alt="Screenshot 2026-08-16 001431" src="https://github.com/user-attachments/assets/734c86b2-d057-4da8-9d69-415eb835cc53" />
+
 ### 1. **Executive Sales & Channel Dashboard**
 - Total sales ($4.88B) and order volume (582K)
 - Sales breakdown by product category
